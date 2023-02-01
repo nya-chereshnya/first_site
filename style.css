@@ -1,0 +1,283 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    /* position: relative; */
+    display: block;
+    background-color: #262626;
+    width: 100%;
+    /* height: 10vh; */
+}
+
+.navbar-container ul {
+    list-style: none;
+    margin-left: -40px;
+}
+
+.navbar-container li {
+    margin-top: 5px;
+}
+
+.navbar-container {
+    margin: 0 10% 0 10%;
+    /* position: relative; */
+    padding: 10px;
+    height: auto;
+}
+
+
+.text {
+    /* margin-bottom: -50px; */
+    display: none;
+}
+
+.navbar-container input:checked~.text {
+    display: block;
+}
+
+.navbar-container .menu {
+    margin-top: 5px;
+    float: right;
+    width: 30px;
+}
+
+.navbar-container input {
+    display: none;
+}
+
+.title img {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.text {
+    /* margin-top: 15px; */
+    color: #d9d9d9;
+}
+
+.logo {
+    /* padding-top: 10px; */
+    padding-top: 5px;
+    height: auto;
+    align-items:center;
+    display: inline-flex;
+    /* margin-bottom: -3px; */
+}
+
+@media screen and (min-width: 1000px) {
+    .menu {
+        display: none;
+    }
+
+    .text {
+        display: inline-flex;
+        float: right;
+        /* justify-content: flex-end; */
+    }
+
+    .text ul li {
+        display: inline;
+        margin-left: 10px;
+    }
+
+    .text {
+        margin-top: -5px;
+    }
+}
+
+.header-title {
+    display: block;
+    width: 100%;
+    background-color: #2a2a2a;
+    padding-bottom: 2%;
+}
+
+.header-title-container {
+    color: #d9d9d9;
+    margin: 0 15% 0 15%;
+    text-align: center;
+}
+
+.header-title-container h1 {
+    font-weight: 100;
+    margin-top: 0;
+    padding-top: 3%;
+    font-size: 250%;
+}
+
+.header-title-container p {
+    font-size: 150%;
+    font-weight: 100;
+}
+
+.header-title-container input {
+    color: #f8f8f8;
+    background-color: #ff6760;
+    padding: 10px 20px;
+    margin: 2% 0 2% 0;
+    border: none;
+    border-radius: 6px;
+}
+
+.header-icon-elements {
+    color: #909090;
+    background-color: #f8f8f8;
+    width: 100%;
+    height: auto;
+}
+
+.header-icon-elements-container {
+    width: 70%;
+    margin: 0 15% 0 15%;
+    padding: 3% 0 3% 0;
+    display: flex;
+    /* font-weight: 300; */
+}
+
+@media screen and (min-width: 1000px) {
+    .header-icon-elements-container {
+        justify-content: space-between;
+    }
+
+    .average-block {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header-icon-elements-container {
+        flex-direction: column;
+    }
+
+    .average-block {
+        width: 100%;
+    }
+}
+
+.icon-block {
+    text-align: center;
+}
+
+.text-block {
+    padding: 2%;
+    text-align: center;
+}
+
+.text-block h1 {
+    margin-top: 1%;
+}
+
+.icon-container {
+    height: 20%;
+}
+
+.headers-featured-works-container {
+    margin: 0 15% 0 15%;
+    padding: 2% 0 2% 0;
+    text-align: center;
+    color: #616161;
+}
+
+@media screen and (min-width: 1000px) {
+    .featured-works-main-button-block {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .featured-works-buttons-container {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .featured-works-main-button-block {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.featured-works-button input {
+    background-color: #ff6760;
+    border: 0;
+    border-radius: 6px;
+    padding: 10px 20px;
+    color: #f8f8f8;
+    margin: 5px;
+}
+
+.main-pictures-block {
+    margin: 0 15% 0 15%;
+}
+
+.pictures-container {
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.picture-block {
+    margin: 2px 2px -2px 2px;
+}
+
+.footer-societis {
+    background-color: #313131;
+}
+
+.footer-societis-container {
+    /* margin: 0 15% 0 45%; */
+    margin: 0 15% 0 15%;
+    padding: 3% 0 3% 0;
+    text-align: center;
+    color: #b6b6b6;
+}
+
+.footer-adress {
+    /* margin: 0 30% 0 30%; */
+    font-size: 80%;
+}
+
+.geo {
+    margin-top: 5px;
+}
+
+.phone {
+    margin-top: 5px;
+}
+
+@media screen and (min-width: 1700px) {
+    .footer-adress {
+        margin: 0 35% 0 35%;
+        position: relative;
+    }
+
+    .geo {
+        position: absolute;
+        left: 0;
+    }
+
+    .phone {
+        position: absolute;
+        right: 0;
+    }
+}
+
+.footer-end {
+    background-color: #2c2c2c;
+}
+
+.footer-end-container {
+    margin: 0 15% 0 15%;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #bebebe;
+    font-size: 80%;
+}

@@ -1,0 +1,7 @@
+.text {
+    display: none;
+}
+
+.container input:checked~.text {
+    display: block;
+}
